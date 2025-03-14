@@ -1,0 +1,24 @@
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .modal_overlay {
+    padding: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .modal_overlay {
+    padding: 12px;
+  }
+}

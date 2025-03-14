@@ -1,0 +1,99 @@
+.game_visuals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 60%;
+  position: relative;
+  height: 540px;
+  border-radius: 10px;
+  background-image: url(../assets/images/woods.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background_color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.win {
+  background: linear-gradient(
+    110deg,
+    #007200 0%,
+    #00720042 45%,
+    #72000083 55%,
+    #7200003a 100%
+  );
+}
+.lose {
+  background: linear-gradient(
+    110deg,
+    #720000 0%,
+    #72000042 45%,
+    #00720083 55%,
+    #0072003a 100%
+  );
+}
+.draw {
+  background: #ffffff2f;
+}
+.computer_side,
+.user_side {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+}
+.computer_side h1,
+.user_side h1 {
+  font-size: 70px;
+}
+.computer_side p,
+.user_side p {
+  font-size: 28px;
+}
+.user_side img,
+.computer_side img {
+  width: 70%;
+  /* height: 200px; */
+  /* border-radius: 50%; */
+  /* background-color: white; */
+  /* padding: 10px; */
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1024px) {
+  .game_visuals {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .game_visuals {
+    width: 90%;
+  }
+  .computer_side h1,
+  .user_side h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .game_visuals {
+    width: 100%;
+    height: 300px;
+  }
+  .computer_side h1,
+  .user_side h1 {
+    font-size: 30px;
+  }
+  .computer_side p,
+  .user_side p {
+    font-size: 24px;
+  }
+}

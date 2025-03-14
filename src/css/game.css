@@ -1,0 +1,112 @@
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: #f5f5f5;
+  gap: 20px;
+  background-image: url(../assets/images/woods.png);
+  background-size: cover;
+}
+.rps_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.rps_button button {
+  width: 30%;
+  background-color: #353535;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.rps_button button.active {
+  background-color: #dc0000;
+}
+
+.rps_button button img {
+  width: 15px;
+  filter: invert(1);
+}
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* gap: 10px; */
+  margin-top: 6px;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings button {
+  background-color: #353535;
+}
+.settings button:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.game-controls form {
+  /* height: 20px; */
+  gap: 30px;
+}
+@media (max-width: 1024px) {
+  /* .game-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: #111;
+  } */
+  .game {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  .game-controls {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .game-controls form {
+    /* height: 20px; */
+    gap: 15px;
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .game-controls form {
+    gap: 15px;
+    width: 90%;
+  }
+  .scoreboard .input-group input {
+    width: 95%;
+  }
+}
+@media (max-width: 425px) {
+  .game-controls form {
+    width: 100%;
+  }
+  form {
+    width: 300px;
+    border-radius: 10px;
+  }
+  .rps_button button img {
+    width: 12px;
+  }
+}

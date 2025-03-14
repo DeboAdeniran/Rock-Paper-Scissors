@@ -1,0 +1,27 @@
+.endGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  gap: 20px;
+  background-image: url(../assets/images/woods.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.endGame form {
+  gap: 20px;
+}
+
+.endGame form h1 {
+  text-align: center;
+}
+.W {
+  color: green;
+}
+.L {
+  color: red;
+}
+.D {
+  color: white;
+}

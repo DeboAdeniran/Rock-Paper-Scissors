@@ -1,0 +1,43 @@
+.how-to-play {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.how-to-play h3,
+.how-to-play h4 {
+  color: #ff4747;
+}
+.how-to-play p,
+.how-to-play ul,
+.how-to-play ol {
+  font-size: 15px;
+}
+
+.how-to-play ul,
+.how-to-play ol {
+  padding-left: 20px;
+}
+
+.how-to-play ul li,
+.how-to-play ol li {
+  margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
+  .how-to-play {
+    max-width: 400px;
+  }
+  .how-to-play p,
+  .how-to-play ul,
+  .how-to-play ol {
+    font-size: 12px;
+  }
+}

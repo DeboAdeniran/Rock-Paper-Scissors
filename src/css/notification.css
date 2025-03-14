@@ -1,0 +1,41 @@
+.errortab {
+  position: fixed;
+  top: -100px; /* Initially hidden */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #242424;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  max-width: 90%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #dc0000;
+  z-index: 1000;
+
+  /* Only slide-in effect, no fade-out */
+  animation: slideBounce 3s ease-out;
+}
+
+/* Slide Down and Bounce */
+@keyframes slideBounce {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  60% {
+    top: 20px;
+    opacity: 1;
+  }
+  80% {
+    top: 10px;
+  }
+  100% {
+    top: 15px;
+  }
+}
